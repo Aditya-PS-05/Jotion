@@ -16,7 +16,7 @@ export const ConvexClientProvider = ({
             publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
         >
             <ConvexProviderWithClerk
-                useAuth={useAuth}
+                useAuth={useAuth as any}
                 client={convex}
             >
                 {children}
